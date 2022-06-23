@@ -1,0 +1,19 @@
+<!-- <app-header></app-header> -->
+<div class="col-12" style="border-bottom:1 px solid black !important;"><h1>Dicionario Join RH</h1></div>
+<mat-accordion #accordion [multi]="true" [hideToggle]="false">
+  <mat-expansion-panel [hideToggle]="false" *ngFor="let item of data">
+    <mat-expansion-panel-header>
+      <span class="col-6">
+        {{ item.title }}
+      </span>
+      <span class="col-6">
+        <a class="content-dicionario">
+          <span>Ver mais...</span>
+          <span></span>
+        </a>
+      </span>
+    </mat-expansion-panel-header>
+    {{ item.description }}
+    <mat-action-row> </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>

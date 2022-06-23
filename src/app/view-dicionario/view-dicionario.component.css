@@ -1,0 +1,18 @@
+mat-accordion{
+  margin: 5px;
+}
+.content-dicionario{
+  float: right;
+  justify-content: end;
+}
+.mat-expansion-panel{
+  background-color: aliceblue;
+  color: rgb(68, 66, 66);
+  margin: 6px;
+  border: 1px solid rgb(68, 66, 66);
+  border-radius: 20px !important;
+}
+.mat-expansion-panel-content .active{
+  border-top: 1px solid black !important;
+  background-color: rgb(165, 203, 236) !important;
+}
