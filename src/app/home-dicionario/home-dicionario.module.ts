@@ -1,3 +1,4 @@
+
 import { HeaderModule } from './../header/header.module';
 import { RouterModule } from '@angular/router';
 import { HomeDicionarioComponent } from './home-dicionario.component';
@@ -13,7 +14,8 @@ import { MaterialModule } from '../material/material.module';
     CommonModule,
     MaterialModule,
     RouterModule,
-    HeaderModule
+    HeaderModule,
+
   ],
   exports:[HomeDicionarioComponent]
 })
