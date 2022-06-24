@@ -1,3 +1,4 @@
+import { MaterialModule } from './../material/material.module';
 import { HeaderModule } from './../header/header.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -5,6 +6,7 @@ import { CommonModule } from '@angular/common';
 
 import { NewDicionarioRoutingModule } from './new-dicionario-routing.module';
 import { NewDicionarioComponent } from './new-dicionario.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +17,10 @@ import { NewDicionarioComponent } from './new-dicionario.component';
     CommonModule,
     NewDicionarioRoutingModule,
     RouterModule,
-    HeaderModule
+    HeaderModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports:[NewDicionarioComponent]
 })

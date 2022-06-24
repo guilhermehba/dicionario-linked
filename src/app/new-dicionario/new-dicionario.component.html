@@ -1,3 +1,25 @@
-<!-- <app-header></app-header> -->
-<p>new-dicionario works!</p>
+<app-header></app-header>
 
+<div class="card col-md-4 justify-content-center align-items-center">
+  <div class="card-title"><h1>Adicionar Dicionario</h1></div>
+  <div class="card-body  row">
+    <form [formGroup]="newDiario">
+      <input
+        matInput
+        class="input col-12"
+        formControlName="title"
+        type="text"
+        required
+        placeholder="Insira um Titulo"
+      />
+      <textarea
+        matInput
+        class="input col-12"
+        formControlName="description"
+        type="text"
+        required
+        placeholder="Insira uma Descrição"
+      ></textarea>
+    </form>
+  </div>
+</div>

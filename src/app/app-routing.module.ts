@@ -11,7 +11,7 @@ const routes: Routes = [
     component: AppComponent,
     children: [
       {path:'', component:HomeDicionarioComponent},
-      { path: 'view-dicionario', component: ViewDicionarioComponent },
+      { path: 'view-dicionario/:diario', component: ViewDicionarioComponent },
       {
         path: 'new-dicionario',
         component: NewDicionarioComponent,
