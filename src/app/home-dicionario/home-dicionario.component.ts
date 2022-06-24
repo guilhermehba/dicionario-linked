@@ -17,6 +17,7 @@ export interface Base {
 })
 export class HomeDicionarioComponent implements OnInit {
   listBase!:Base[]
+  nomeDiario!:any
   constructor(private http:HttpClient, private service:DicionarioService) { }
 
   ngOnInit(): void {
@@ -27,5 +28,8 @@ export class HomeDicionarioComponent implements OnInit {
     this.service.getDicionariosBase().subscribe({
       next: (dicionario) => (this.listBase = dicionario),
     });
+  }
+  gatilho(diario: string) {
+    this.nomeDiario = sessionStorage.setItem('diario', diario);
   }
 }

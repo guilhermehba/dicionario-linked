@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-new-dicionario',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-dicionario.component.css']
 })
 export class NewDicionarioComponent implements OnInit {
-
+  newDiario!:FormGroup
   constructor() { }
 
   ngOnInit(): void {

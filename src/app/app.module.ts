@@ -1,3 +1,4 @@
+import {  HttpClientModule } from '@angular/common/http';
 import { HeaderModule } from './header/header.module';
 import { NewDicionarioModule } from './new-dicionario/new-dicionario.module';
 import { ViewDicionarioModule } from './view-dicionario/view-dicionario.module';
@@ -28,7 +29,8 @@ import { HeaderComponent } from './header/header.component';
     HomeDicionarioModule,
     ViewDicionarioModule,
     NewDicionarioModule,
-    HeaderModule
+    HeaderModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { HeaderModule } from './../header/header.module';
 import { MaterialModule } from './../material/material.module';
 import { NgModule } from '@angular/core';
@@ -17,7 +18,8 @@ import { AlphabetFilterModule } from 'alphabet-filter';
     ViewDicionarioRoutingModule,
     MaterialModule,
     AlphabetFilterModule,
-    HeaderModule
+    HeaderModule,
+    HttpClientModule
 
   ],
   exports:[
